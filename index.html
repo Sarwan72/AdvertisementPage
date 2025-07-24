@@ -1,589 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Advertisement</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="style.css">
-   <style>
-   
-.faq-section {
-  width: 1300px;
-  margin: auto;
-}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advertisement</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .faq-section {
+        width: 1300px;
+        margin: auto;
+      }
 
-h4 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 30px;
-}
+      h4 {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
 
-.faq-item {
-  /* border: 1px solid #e0e0e0; */
-  border-radius: 10px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  transition: all 0.4s ease;
-}
+      .faq-item {
+        /* border: 1px solid #e0e0e0; */
+        border-radius: 10px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
 
-.faq-question {
-  
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 20px;
-  cursor: pointer;
-  background-color: #fff;
-  transition: background 0.3s ease;
-}
-.faq-question:hover {
-  background-color: #f0f0f0;
-}
+      .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 20px;
+        cursor: pointer;
+        background-color: #fff;
+        transition: background 0.3s ease;
+      }
+      .faq-question:hover {
+        background-color: #f0f0f0;
+      }
 
-.faq-question span {
-  font-size: 17px;
-  font-weight: 600;
-  color: #222;
-}
+      .faq-question span {
+        font-size: 17px;
+        font-weight: 600;
+        color: #222;
+      }
 
-.arrow {
-  width: 20px;
-  height: 20px;
-  transition: transform 0.3s ease;
-}
+      .arrow {
+        width: 20px;
+        height: 20px;
+        transition: transform 0.3s ease;
+      }
 
-.faq-item.active .arrow {
-  transform: rotate(180deg);
-}
+      .faq-item.active .arrow {
+        transform: rotate(180deg);
+      }
 
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  padding: 0 20px;
-  background-color: transparent; /* Hide any background initially */
-  border-top: none;              /* No border before open */
-  transition: max-height 0.4s ease, padding 0.3s ease, background-color 0.3s ease, border-top 0.3s ease;
-}
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 20px;
+        background-color: transparent;
+        border-top: none;
+        transition: max-height 0.4s ease, padding 0.3s ease,
+          background-color 0.3s ease, border-top 0.3s ease;
+      }
 
-.faq-item.active .faq-answer {
-  padding: 15px 20px;
-  max-height: 500px; /* Big enough to fit your content */
-  background-color: #fafafa;
-  border-top: 1px solid #e0e0e0;
-}
+      .faq-item.active .faq-answer {
+        padding: 15px 20px;
+        max-height: 500px;
+        background-color: #fafafa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navbar">
+          <h1 class="logo">Advertise<span>ment</span></h1>
+          <nav class="nav-links">
+            <ul>
+              <li><a href="success-section">Success Stories</a></li>
+              <li><a href="#goals-section">Goals</a></li>
 
-  </style>
-</head>
-<body>
- <div class="container">
-  
-
-  <header>
-  <div class="navbar">
-    <h1 class="logo">Advertise<span>ment</span></h1>
-    <nav class="nav-links">
-      <ul>
-        <li><a href="success-section">Success Stories</a></li>
-        <li><a href="#goals-section">Goals</a></li>
-        
-        
-        <li><a href="#features">Features</a></li>
-        <li><a href="#ads">Ads</a></li>
-        <li><a href="#faqs">FAQs</a></li>
-      </ul>
-    </nav>
-    <button class="btn-green">Talk to us</button>
-  </div>
-</header>
-
-  
-  <section class="hero">
-    <div class="hero-left">
-      <p class="breadcrumb">Home > Advertise your Business</p>
-      <h1><span class="grow">GROW</span> Your Business</h1>
-      <p class="subtitle">Advertise with Justdial – India’s No. 1 Local Search Engine</p>
-
-      <div class="mobile-input">
-        <span class="flag">🇮🇳 +91</span>
-        <input type="text" placeholder="Enter Mobile No" />
-        <button>Get Started →</button>
-      </div>
-
-      <ul class="benefits">
-        <li>✔ Lorem ipsum dolor sit amet consectetur.</li>
-        <li>✔ Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-        <li>✔ Lorem ipsum dolor sit amet consectetur.</li>
-      </ul>
-
-      <p class="agreement">
-        <input type="checkbox" checked />
-        By continuing, you agree to our 
-        <a href="#">Terms of Use</a>, 
-        <a href="#">Privacy</a> & 
-        <a href="#">Infringement Policy</a>
-      </p>
-    </div>
-
-    <div class="hero-right">
-      <img src="./assets/adv_hero.avif" alt="Phone Mockup" class="phone-image" />
-      <div class="badges">
-        <div class="badge blue">📦 19.1 Crore+<br><span>Buyers</span></div>
-        <div class="badge yellow">😊 6.1 Lakh+<br><span>Happy Customers</span></div>
-      </div>
-      <!-- <img src="businessman.png" alt="Man Pointing" class="person-image" /> -->
-    </div>
-  </section> 
-
-
-<section class="success-section" id="success-section">
-  <div class="success-left">
-    <h2>Success Stories</h2>
-    <p>6.1 Lakh+ Advertisers</p>
-    <button>See All Stories</button>
-  </div>
-
-  <div class="success-cards">
-    <!-- CARD 1 -->
-    <div class="success-card">
-      <img src="./assets/m1.jpg" alt="Rajesh Chhabria">
-      <div class="play-icon">
-        <img src="./assets/play.png" alt="Play">
-      </div>
-      <div class="card-content">
-        <h3>Ravi Prakash Chhabria</h3>
-        <p>Chhabria and Sons</p>
-        <p class="category">sanitaryware dealers</p>
-        <p class="since">Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="visit">Visit Business →</a>
-      </div>
-    </div>
-
-    <!-- CARD 2 (light blue background) -->
-    <div class="success-card blue">
-      <img src="./assets/w1.webp" alt="Varshini">
-      <div class="play-icon">
-        <img src="./assets/play.png" alt="Play">
-      </div>
-      <div class="card-content">
-        <h3>Varshini</h3>
-        <p>V2 Makeover</p>
-        <p class="category">makeup artists</p>
-        <p class="since">Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="visit">Visit Business →</a>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="success-card blue">
-      <img src="./assets/m2.jpg" alt="Gourab Neogi">
-      <div class="play-icon">
-        <img src="./assets/play.png" alt="Play">
-      </div>
-      <div class="card-content">
-        <h3>Gourab Neogi</h3>
-        <p>Tally Academy (Corporate Centre - Gariahat)</p>
-        <p class="category">Lorem ipsum dolor sit amet consectetur.</p>
-        <p class="since">Lorem ipsum dolor sit amet.</p>
-        <a href="#" class="visit">Visit Business →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-<section class="goals-section" id="goals-section">
-  <h2 class="section-title">Advertisement Help You Achieve Your Goals</h2>
-  <div class="goal-cards">
-    <div class="goal-card">
-      <img src="./assets/u1.svg" alt="Market to New Users" />
-      <p>Market Your Business to New Users</p>
-    </div>
-    <div class="goal-card">
-      <img src="./assets/u2.svg" alt="Grow Revenue" />
-      <p>Grow Your Revenue</p>
-    </div>
-    <div class="goal-card">
-      <img src="./assets/u3.svg" alt="Walk-in Customers" />
-      <p>Get More Walk-in Customers</p>
-    </div>
-  </div>
-</section>
-
-<section class="features-section" id="features">
-  <div class="features-container">
-    <h2>Features</h2>
-    <div class="features-grid">
-      <div class="feature-item">
-        <img src="./assets/fea1.svg" alt="Premium Listing">
-        <div>
-          <h3>Premium Listing</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#ads">Ads</a></li>
+              <li><a href="#faqs">FAQs</a></li>
+            </ul>
+          </nav>
+          <button class="btn-green">Talk to us</button>
         </div>
-      </div>
-      <div class="feature-item">
-        <img src="./assets/fea2.svg" alt="Verified Seal">
-        <div>
-          <h3>Verified Seal*</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore.</p>
+      </header>
+
+      <section class="hero">
+        <div class="hero-left">
+          <p class="breadcrumb">Home > Advertise your Business</p>
+          <h1><span class="grow">GROW</span> Your Business</h1>
+          <p class="subtitle">
+            Advertise with Justdial – India’s No. 1 Local Search Engine
+          </p>
+
+          <div class="mobile-input">
+            <span class="flag">🇮🇳 +91</span>
+            <input type="text" placeholder="Enter Mobile No" />
+            <button>Get Started →</button>
+          </div>
+
+          <ul class="benefits">
+            <li>✔ Lorem ipsum dolor sit amet consectetur.</li>
+            <li>✔ Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            <li>✔ Lorem ipsum dolor sit amet consectetur.</li>
+          </ul>
+
+          <p class="agreement">
+            <input type="checkbox" checked />
+            By continuing, you agree to our
+            <a href="#">Terms of Use</a>, <a href="#">Privacy</a> &
+            <a href="#">Infringement Policy</a>
+          </p>
         </div>
-      </div>
-      <div class="feature-item">
-        <img src="./assets/fea3.svg" alt="Online Catalogue">
-        <div>
-          <h3>Online Catalogue</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="hero-right">
+          <img
+            src="./assets/adv_hero.avif"
+            alt="Phone Mockup"
+            class="phone-image"
+          />
+          <div class="badges">
+            <div class="badge blue">
+              📦 19.1 Crore+<br /><span>Buyers</span>
+            </div>
+            <div class="badge yellow">
+              😊 6.1 Lakh+<br /><span>Happy Customers</span>
+            </div>
+          </div>
+          <!-- <img src="businessman.png" alt="Man Pointing" class="person-image" /> -->
         </div>
-      </div>
-      <div class="feature-item">
-        <img src="./assets/fea4.svg" alt="Trust Stamp">
-        <div>
-          <h3>Trust Stamp*</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </section>
+
+      <section class="success-section" id="success-section">
+        <div class="success-left">
+          <h2>Success Stories</h2>
+          <p>6.1 Lakh+ Advertisers</p>
+          <button>See All Stories</button>
         </div>
-      </div>
-      <div class="feature-item">
-        <img src="./assets/fea5.svg" alt="Payment Solutions">
-        <div>
-          <h3>Payment Solutions</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.s</p>
+
+        <div class="success-cards">
+          <!-- CARD 1 -->
+          <div class="success-card">
+            <img src="./assets/m1.jpg" alt="Rajesh Chhabria" />
+            <div class="play-icon">
+              <img src="./assets/play.png" alt="Play" />
+            </div>
+            <div class="card-content">
+              <h3>Ravi Prakash Chhabria</h3>
+              <p>Chhabria and Sons</p>
+              <p class="category">sanitaryware dealers</p>
+              <p class="since">Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="visit">Visit Business →</a>
+            </div>
+          </div>
+
+          <!-- CARD 2 (light blue background) -->
+          <div class="success-card blue">
+            <img src="./assets/w1.webp" alt="Varshini" />
+            <div class="play-icon">
+              <img src="./assets/play.png" alt="Play" />
+            </div>
+            <div class="card-content">
+              <h3>Varshini</h3>
+              <p>V2 Makeover</p>
+              <p class="category">makeup artists</p>
+              <p class="since">Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="visit">Visit Business →</a>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="success-card blue">
+            <img src="./assets/m2.jpg" alt="Gourab Neogi" />
+            <div class="play-icon">
+              <img src="./assets/play.png" alt="Play" />
+            </div>
+            <div class="card-content">
+              <h3>Gourab Neogi</h3>
+              <p>Tally Academy (Corporate Centre - Gariahat)</p>
+              <p class="category">Lorem ipsum dolor sit amet consectetur.</p>
+              <p class="since">Lorem ipsum dolor sit amet.</p>
+              <a href="#" class="visit">Visit Business →</a>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="goals-section" id="goals-section">
+        <h2 class="section-title">Advertisement Help You Achieve Your Goals</h2>
+        <div class="goal-cards">
+          <div class="goal-card">
+            <img src="./assets/u1.svg" alt="Market to New Users" />
+            <p>Market Your Business to New Users</p>
+          </div>
+          <div class="goal-card">
+            <img src="./assets/u2.svg" alt="Grow Revenue" />
+            <p>Grow Your Revenue</p>
+          </div>
+          <div class="goal-card">
+            <img src="./assets/u3.svg" alt="Walk-in Customers" />
+            <p>Get More Walk-in Customers</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="features-section" id="features">
+        <div class="features-container">
+          <h2>Features</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <img src="./assets/fea1.svg" alt="Premium Listing" />
+              <div>
+                <h3>Premium Listing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <img src="./assets/fea2.svg" alt="Verified Seal" />
+              <div>
+                <h3>Verified Seal*</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolore.
+                </p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <img src="./assets/fea3.svg" alt="Online Catalogue" />
+              <div>
+                <h3>Online Catalogue</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <img src="./assets/fea4.svg" alt="Trust Stamp" />
+              <div>
+                <h3>Trust Stamp*</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                  ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <img src="./assets/fea5.svg" alt="Payment Solutions" />
+              <div>
+                <h3>Payment Solutions</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.s</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <img src="./assets/fea6.svg" alt="Mobile Banner" />
+              <div>
+                <h3>Mobile Banner</h3>
+                <p>
+                  Promote your business on competitor listings by targeting
+                  high-intent mobile users
+                </p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <img src="./assets/fea8.svg" alt="Smart Lead Management" />
+              <div>
+                <h3>Smart Lead Management System</h3>
+                <p>View and track all your leads at one place</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <img src="./assets/fea9.svg" alt="Website Banner" />
+              <div>
+                <h3>Website Banner</h3>
+                <p>
+                  Promote your business on competitor listings by targeting
+                  high-intent website users
+                </p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <img src="./assets/fea10.svg" alt="Website Banner" />
+              <div>
+                <h3>Website Banner</h3>
+                <p>
+                  Promote your business on competitor listings by targeting
+                  high-intent website users
+                </p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <img src="./assets/fea7.svg" alt="Mobile Banner" />
+              <div>
+                <h3>Mobile Banner</h3>
+                <p>
+                  Promote your business on competitor listings by targeting
+                  high-intent mobile users
+                </p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <img src="./assets/fea11.svg" alt="Website Banner" />
+              <div>
+                <h3>Website Banner</h3>
+                <p>
+                  Promote your business on competitor listings by targeting
+                  high-intent website users
+                </p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <img src="./assets/fea6.svg" alt="Mobile Banner" />
+              <div>
+                <h3>Mobile Banner</h3>
+                <p>
+                  Promote your business on competitor listings by targeting
+                  high-intent mobile users
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ads-section" id="ads">
+        <div><h1>Learn How to Maximise Justdial Ads for Your Business</h1></div>
+        <div class="ads-cards">
+          <!-- CARD 1 -->
+          <!-- <div><h1>Learn How to Maximise Justdial Ads for Your Business</h1></div> -->
+          <div class="ads-card">
+            <img src="./assets/mo1.webp" alt="Rajesh Chhabria" />
+
+            <div class="card-content">
+              <h3>The Art of Selecting the Right Categories</h3>
+              <p>Lorem ipsum dolor sit.</p>
+
+              <a href="#" class="visit">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- CARD 2 (light blue background) -->
+          <div class="ads-card blue">
+            <img src="./assets/mo2.webp" alt="Varshini" />
+
+            <div class="card-content">
+              <h3>The Art of Selecting the Right Categories</h3>
+              <p>Lorem ipsum dolor sit.</p>
+              <a href="#" class="visit">Learn More →</a>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="ads-card blue">
+            <img src="./assets/mo3.webp" alt="Gourab Neogi" />
+
+            <div class="card-content">
+              <h3>The Art of Selecting the Right Categories</h3>
+              <p>Lorem ipsum dolor sit.</p>
+              <a href="#" class="visit">Learn More →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="faq-section" id="faqs">
+        <h4>Got a question?</h4>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span
+              >Lorem ipsum dolor sit amet Lorem, ipsum dolor?</span
+            >
+            <img
+              src="./assets/down-arrow.png"
+              class="arrow"
+              alt="Toggle Arrow"
+            />
+          </div>
+          <div class="faq-answer">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio aut, voluptates suscipit qui magni voluptatum. Quas veritatis fuga necessitatibus?
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question" id="faq-question">
+            <span>Lorem ipsum dolor sit amet?</span>
+            <img
+              src="./assets/down-arrow.png"
+              class="arrow"
+              alt="Toggle Arrow"
+            />
+          </div>
+          <div class="faq-answer">
+            <p>
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae earum nulla, repellat mollitia beatae enim placeat maiores alias labore sint deserunt esse facere eius doloribus dolores aut. Distinctio sapiente minima soluta odit obcaecati, temporibus repellendus neque quia reiciendis id assumenda amet quos! Assumenda sapiente, quos reprehenderit esse distinctio modi. Expedita!
+            </p>
+          </div>
+        </div>
+
      
-      <div class="feature-item">
-        <img src="./assets/fea6.svg" alt="Mobile Banner">
-        <div>
-          <h3>Mobile Banner</h3>
-          <p>Promote your business on competitor listings by targeting high-intent mobile users</p>
-        </div>
-      </div>
-      
-      <div class="feature-item">
-        <img src="./assets/fea8.svg" alt="Smart Lead Management">
-        <div>
-          <h3>Smart Lead Management System</h3>
-          <p>View and track all your leads at one place</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <img src="./assets/fea9.svg" alt="Website Banner">
-        <div>
-          <h3>Website Banner</h3>
-          <p>Promote your business on competitor listings by targeting high-intent website users</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <img src="./assets/fea10.svg" alt="Website Banner">
-        <div>
-          <h3>Website Banner</h3>
-          <p>Promote your business on competitor listings by targeting high-intent website users</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <img src="./assets/fea7.svg" alt="Mobile Banner">
-        <div>
-          <h3>Mobile Banner</h3>
-          <p>Promote your business on competitor listings by targeting high-intent mobile users</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <img src="./assets/fea11.svg" alt="Website Banner">
-        <div>
-          <h3>Website Banner</h3>
-          <p>Promote your business on competitor listings by targeting high-intent website users</p>
-        </div>
-      </div>
-      <div class="feature-item">
-        <img src="./assets/fea6.svg" alt="Mobile Banner">
-        <div>
-          <h3>Mobile Banner</h3>
-          <p>Promote your business on competitor listings by targeting high-intent mobile users</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-<section class="ads-section" id="ads">
-   <div><h1>Learn How to Maximise Justdial Ads for Your Business</h1></div>
-  <div class="ads-cards">
-    <!-- CARD 1 -->
-     <!-- <div><h1>Learn How to Maximise Justdial Ads for Your Business</h1></div> -->
-    <div class="ads-card">
-      <img src="./assets/mo1.webp" alt="Rajesh Chhabria">
-     
-      <div class="card-content">
-        <h3>The Art of Selecting the Right Categories</h3>
-        <p>Lorem ipsum dolor sit.</p>
-       
-        <a href="#" class="visit">Learn More  →</a>
-      </div>
-    </div>
-
-    <!-- CARD 2 (light blue background) -->
-    <div class="ads-card blue">
-      <img src="./assets/mo2.webp" alt="Varshini">
-     
-      <div class="card-content">
-        <h3>The Art of Selecting the Right Categories</h3>
-        <p>Lorem ipsum dolor sit.</p>
-        <a href="#" class="visit">Learn More  →</a>
-      </div>
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="ads-card blue">
-      <img src="./assets/mo3.webp" alt="Gourab Neogi">
-      
-      <div class="card-content">
-      <h3>The Art of Selecting the Right Categories</h3>
-        <p>Lorem ipsum dolor sit.</p>
-        <a href="#" class="visit">Learn More  →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-<div class="faq-section" id="faqs">
-    <h4>Got a question?</h4>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>What benefits will I get from a paid listing on Justdial?</span>
-        <img src="./assets/down-arrow.png" class="arrow" alt="Toggle Arrow">
-      </div>
-      <div class="faq-answer">
-        <p>With a paid listing, your business will be more visible, gain more leads, and have access to premium tools.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How can I choose the best paid plan for me?</span>
-        <img src="./assets/down-arrow.png" class="arrow" alt="Toggle Arrow">
-      </div>
-      <div class="faq-answer">
-        <p>You can compare plans based on your business needs, budget, and visibility goals. Our experts can also help you decide.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How can I choose the best paid plan for me?</span>
-        <img src="./assets/down-arrow.png" class="arrow" alt="Toggle Arrow">
-      </div>
-      <div class="faq-answer">
-        <p>You can compare plans based on your business needs, budget, and visibility goals. Our experts can also help you decide.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How can I choose the best paid plan for me?</span>
-        <img src="./assets/down-arrow.png" class="arrow" alt="Toggle Arrow">
-      </div>
-      <div class="faq-answer">
-        <p>You can compare plans based on your business needs, budget, and visibility goals. Our experts can also help you decide.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How can I choose the best paid plan for me?</span>
-        <img src="./assets/down-arrow.png" class="arrow" alt="Toggle Arrow">
-      </div>
-      <div class="faq-answer">
-        <p>You can compare plans based on your business needs, budget, and visibility goals. Our experts can also help you decide.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How can I choose the best paid plan for me?</span>
-        <img src="./assets/down-arrow.png" class="arrow" alt="Toggle Arrow">
-      </div>
-      <div class="faq-answer">
-        <p>You can compare plans based on your business needs, budget, and visibility goals. Our experts can also help you decide.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How can I choose the best paid plan for me?</span>
-        <img src="./assets/down-arrow.png" class="arrow" alt="Toggle Arrow">
-      </div>
-      <div class="faq-answer">
-        <p>You can compare plans based on your business needs, budget, and visibility goals. Our experts can also help you decide.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <div class="faq-question">
-        <span>How can I choose the best paid plan for me?</span>
-        <img src="./assets/down-arrow.png" class="arrow" alt="Toggle Arrow">
-      </div>
-      <div class="faq-answer">
-        <p>You can compare plans based on your business needs, budget, and visibility goals. Our experts can also help you decide.</p>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
-<section class="query-section" id=""query-section>
-  <div class="query-container">
-    <div class="query-image">
-      <img src="./assets/u1.svg" alt="Question Illustration" />
-    </div>
-    <div class="query-form">
-      <h2>Still Having Questions</h2>
-      <textarea id="queryInput" placeholder="Write your query here!"></textarea>
-      <button onclick="submitQuery()">Submit</button>
-    </div>
-  </div>
-</section>
-
-
-<section class="grow-section">
-  <div class="grow-content">
-    <div class="left">
-      <h2><span class="highlight">GROW</span> Your Business</h2>
-      <p>Advertise with Justdial – India's No. 1 Local Search Engine</p>
-
-      <div class="form-group">
-        <label for="mobile">Enter Mobile No</label>
-        <div class="input-wrapper">
-          <span class="flag">🇮🇳 +91</span>
-          <input type="tel" id="mobile" placeholder="Enter your mobile number" />
-          <button onclick="submitMobile()">Get Started ➜</button>
         </div>
       </div>
 
-      <div class="terms">
-        <input type="checkbox" id="agree" checked />
-        <label for="agree">
-          By continuing, you agree to our 
-          <a href="#">Terms of Use</a>, 
-          <a href="#">Privacy</a> & 
-          <a href="#">Infringement Policy</a>
-        </label>
-      </div>
+      <section class="query-section" id="" query-section>
+        <div class="query-container">
+          <div class="query-image">
+            <img src="./assets/u1.svg" alt="Question Illustration" />
+          </div>
+          <div class="query-form">
+            <h2>Still Having Questions</h2>
+            <textarea
+              id="queryInput"
+              placeholder="Write your query here!"
+            ></textarea>
+            <button onclick="submitQuery()">Submit</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="grow-section">
+        <div class="grow-content">
+          <div class="left">
+            <h2><span class="highlight">GROW</span> Your Business</h2>
+            <p>Advertise with Justdial – India's No. 1 Local Search Engine</p>
+
+            <div class="form-group">
+              <label for="mobile">Enter Mobile No</label>
+              <div class="input-wrapper">
+                <span class="flag">🇮🇳 +91</span>
+                <input
+                  type="tel"
+                  id="mobile"
+                  placeholder="Enter your mobile number"
+                />
+                <button onclick="submitMobile()">Get Started ➜</button>
+              </div>
+            </div>
+
+            <div class="terms">
+              <input type="checkbox" id="agree" checked />
+              <label for="agree">
+                By continuing, you agree to our
+                <a href="#">Terms of Use</a>, <a href="#">Privacy</a> &
+                <a href="#">Infringement Policy</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="right">
+            <img src="./assets/mo2.webp" alt="Grow Illustration" />
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div class="right">
-      <img src="./assets/mo2.webp" alt="Grow Illustration" />
-    </div>
-  </div>
-</section>
+    <script>
+      const questions = document.querySelectorAll(".faq-question");
 
-
-
-
-
-
-
-   </div>
-  
-  
-  <script>
-  
-
-
-  document.getElementById('leadForm').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const mobile = document.getElementById('mobile').value;
-  alert("Thanks! We'll contact you at: " + mobile);
-});
-
-
-
- 
-  function submitQuery() {
-    const input = document.getElementById('queryInput');
-    const value = input.value.trim();
-
-    if (!value) {
-      alert('Please enter your query before submitting.');
-      return;
-    }
-
-    alert('Thank you! Your query has been submitted.');
-    input.value = '';
-  }
-
-  
-
-  
-
-
-
-
-
-  const questions = document.querySelectorAll('.faq-question');
-
-  questions.forEach(question => {
-    question.setAttribute('tabindex', '0'); 
-
-  
-    question.addEventListener('click', () => {
-      const parent = question.parentElement;
-
-      
-      document.querySelectorAll('.faq-item').forEach(item => {
-        if (item !== parent) {
-          item.classList.remove('active');
-        }
+      questions.forEach((question) => {
+        question.addEventListener("click", () => {
+          const parent = question.parentElement;
+          parent.classList.toggle("active");
+        });
       });
 
-    
-      parent.classList.toggle('active');
 
-      
-      if (parent.classList.contains('active')) {
-        parent.scrollIntoView({ behavior: "smooth", block: "center" });
-      }
-    });
+    </script>
 
-    
-    question.addEventListener('keydown', (e) => {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        question.click();
-      }
-    });
-  });
-
-
-
-
-
-  document.querySelectorAll("a[href^='#']").forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      if (target) {
-        target.scrollIntoView({ behavior: "smooth" });
-      }
-    });
-  });
-
-
-
-</script>
-
-  <!-- <script src="script.js"></script> -->
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
