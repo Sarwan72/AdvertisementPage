@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+    <g data-name="Mobile Banner">
+        <path data-name="Rectangle 116744" style="fill:none" d="M0 0h44v44H0z"/>
+        <g transform="translate(-62.599 6.731)">
+            <path data-name="Path 461198" d="M93.716 30.539H75.484a1.756 1.756 0 0 1-1.756-1.756V1.756A1.756 1.756 0 0 1 75.484 0h18.232a1.756 1.756 0 0 1 1.756 1.756v27.027a1.756 1.756 0 0 1-1.756 1.756z" style="fill:#365e7d"/>
+            <path data-name="Path 461199" d="M388.956 0H387.7a1.756 1.756 0 0 1 1.756 1.756v27.027a1.756 1.756 0 0 1-1.756 1.756h1.261a1.756 1.756 0 0 0 1.756-1.756V1.756A1.756 1.756 0 0 0 388.956 0z" transform="translate(-295.24)" style="fill:#2b4d66"/>
+            <path data-name="Path 461200" d="M104.633 56.937V31.725a.82.82 0 0 1 .82-.82h16.417a.82.82 0 0 1 .82.82v25.212a.82.82 0 0 1-.82.82h-16.417a.82.82 0 0 1-.82-.82z" transform="translate(-29.062 -29.062)" style="fill:#cbe2ff"/>
+            <path data-name="Path 461201" d="M372.636 30.906h-1.331a.82.82 0 0 1 .82.82v25.212a.82.82 0 0 1-.82.82h1.331a.82.82 0 0 0 .82-.82V31.726a.82.82 0 0 0-.82-.82z" transform="translate(-279.828 -29.063)" style="fill:#bed8fb"/>
+            <path data-name="Path 461202" d="M192.446 2.552h-5.16a.9.9 0 0 1-.842-.575L185.671 0h8.39l-.773 1.977a.9.9 0 0 1-.842.575z" transform="translate(-105.266)" style="fill:#81a7c6"/>
+            <path data-name="Path 461203" d="m277.532 0-.773 1.977a.9.9 0 0 1-.842.575h1.392a.9.9 0 0 0 .842-.575L278.924 0z" transform="translate(-190.129)" style="fill:#5c90b9"/>
+            <g data-name="Group 405902">
+                <path data-name="Path 461204" d="M243.815 14.585h-.666a.461.461 0 1 1 0-.922h.666a.461.461 0 1 1 0 .922z" transform="translate(-158.882 -12.848)" style="fill:#2b4d66"/>
+            </g>
+            <path data-name="Path 461205" d="M104.633 150.839h18.057v6.926h-18.057z" transform="translate(-29.062 -141.842)" style="fill:#f9f6f9"/>
+            <path data-name="Path 461206" d="M385.061 150.839h1.33v6.926h-1.33z" transform="translate(-292.763 -141.842)" style="fill:#dddaec"/>
+            <circle data-name="Ellipse 16328" cx=".882" cy=".882" r=".882" transform="translate(77.279 10.604)" style="fill:#ffd064"/>
+            <path data-name="Path 461207" d="M248.88 157.765h-2.78l3.072-6.926h2.784z" transform="translate(-162.087 -141.842)" style="fill:#ffd064"/>
+            <path data-name="Path 461208" d="M292.766 157.765h1.84l3.072-6.926h-1.84z" transform="translate(-205.973 -141.842)" style="fill:#95d6a4"/>
+            <g data-name="Group 405903">
+                <path data-name="Path 461209" d="M176.679 170.977h-.9a.461.461 0 0 1 0-.922h.9a.461.461 0 1 1 0 .922z" transform="translate(-95.526 -159.912)" style="fill:#2b4d66"/>
+            </g>
+            <g data-name="Group 405904">
+                <path data-name="Path 461210" d="M178.733 199.836h-2.958a.461.461 0 0 1 0-.922h2.958a.461.461 0 0 1 0 .922z" transform="translate(-95.527 -187.049)" style="fill:#2b4d66"/>
+            </g>
+            <g data-name="Group 405905">
+                <path data-name="Path 461211" d="M129.066 228.7h-4.8a.461.461 0 0 1 0-.922h4.8a.461.461 0 0 1 0 .922z" transform="translate(-47.089 -214.189)" style="fill:#2b4d66"/>
+            </g>
+            <g data-name="Group 405906">
+                <path data-name="Path 461212" d="M219.462 170.977h-1.729a.461.461 0 1 1 0-.922h1.729a.461.461 0 1 1 0 .922z" transform="translate(-134.982 -159.912)" style="fill:#2b4d66"/>
+            </g>
+            <path data-name="Path 461213" d="M217.106 331.779h-4.358a.426.426 0 0 1-.426-.426v-1.485a.426.426 0 0 1 .426-.426h4.358a.426.426 0 0 1 .426.426v1.485a.426.426 0 0 1-.426.426z" transform="translate(-130.327 -309.791)" style="fill:#95d6a4"/>
+            <path data-name="Path 461214" d="M272.669 329.441h-1.26a.426.426 0 0 1 .426.426v1.485a.426.426 0 0 1-.426.426h1.26a.426.426 0 0 0 .426-.426v-1.485a.426.426 0 0 0-.426-.426z" transform="translate(-185.89 -309.791)" style="fill:#78c2a4"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44">
+    <g data-name="Website Banner">
+        <path data-name="Rectangle 116744" style="fill:none" d="M0 0h44v44H0z"/>
+        <path data-name="Path 461226" d="M229.609 371.76h-7.747l.983-4.788h5.779z" transform="translate(-203.873 -337.803)" style="fill:#e1effa"/>
+        <path data-name="Path 461227" d="m243.851 371.76-.985-4.788h-5.779l4.789 4.788z" transform="translate(-218.115 -337.803)" style="fill:#b6d4ed"/>
+        <path data-name="Rectangle 172563" transform="translate(15.915 33.958)" style="fill:#e1effa" d="M0 0h11.895v.58H0z"/>
+        <path data-name="Path 461228" d="M52.454 61.9a.725.725 0 0 0-.722.723v18.263a.725.725 0 0 0 .722.724h28.284a.727.727 0 0 0 .725-.724V62.627a.727.727 0 0 0-.725-.723H52.454z" transform="translate(-44.732 -52.441)" style="fill:#34495e"/>
+        <path data-name="Rectangle 172564" transform="translate(8.501 10.964)" style="fill:#fff" d="M0 0h26.726v16.702H0z"/>
+        <path data-name="Rectangle 172565" transform="translate(9.613 11.899)" style="fill:#ff8e31" d="M0 0h7.394v2.216H0z"/>
+        <g data-name="Group 405920">
+            <path data-name="Rectangle 172566" transform="translate(18.168 11.899)" style="fill:#e1effa" d="M0 0h16.124v2.216H0z"/>
+            <path data-name="Rectangle 172567" transform="translate(9.436 24.403)" style="fill:#e1effa" d="M0 0h24.856v.733H0z"/>
+            <path data-name="Rectangle 172568" transform="translate(9.436 26.002)" style="fill:#e1effa" d="M0 0h24.856v.729H0z"/>
+        </g>
+        <g data-name="Group 405921">
+            <path data-name="Rectangle 172569" transform="translate(9.436 19.32)" style="fill:#d0e070" d="M0 0h7.394v4.218H0z"/>
+            <path data-name="Rectangle 172570" transform="translate(18.168 19.32)" style="fill:#d0e070" d="M0 0h7.393v4.218H0z"/>
+            <path data-name="Rectangle 172571" transform="translate(26.897 19.32)" style="fill:#d0e070" d="M0 0h7.395v4.218H0z"/>
+        </g>
+        <path data-name="Rectangle 172572" transform="translate(9.436 14.982)" style="fill:#b8d1e6" d="M0 0h24.856v3.47H0z"/>
+        <path data-name="Path 461229" d="M66.892 214.6H52.467a.726.726 0 0 1-.72-.726v-9.8h1.5v9.026h12.141z" transform="translate(-44.746 -185.432)" style="fill:#2e445c"/>
+    </g>
+</svg>
