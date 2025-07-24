@@ -10,71 +10,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      .faq-section {
-        width: 1300px;
-        margin: auto;
-      }
-
-      h4 {
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 30px;
-      }
-
-      .faq-item {
-        /* border: 1px solid #e0e0e0; */
-        border-radius: 10px;
-        margin-bottom: 15px;
-        overflow: hidden;
-        transition: all 0.4s ease;
-      }
-
-      .faq-question {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 18px 20px;
-        cursor: pointer;
-        background-color: #fff;
-        transition: background 0.3s ease;
-      }
-      .faq-question:hover {
-        background-color: #f0f0f0;
-      }
-
-      .faq-question span {
-        font-size: 17px;
-        font-weight: 600;
-        color: #222;
-      }
-
-      .arrow {
-        width: 20px;
-        height: 20px;
-        transition: transform 0.3s ease;
-      }
-
-      .faq-item.active .arrow {
-        transform: rotate(180deg);
-      }
-
-      .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        padding: 0 20px;
-        background-color: transparent;
-        border-top: none;
-        transition: max-height 0.4s ease, padding 0.3s ease,
-          background-color 0.3s ease, border-top 0.3s ease;
-      }
-
-      .faq-item.active .faq-answer {
-        padding: 15px 20px;
-        max-height: 500px;
-        background-color: #fafafa;
-      }
-    </style>
+   
   </head>
   <body>
     <div class="container">
@@ -372,7 +308,7 @@
         </div>
       </section>
 
-      <div class="faq-section" id="faqs">
+      <section class="faq-section" id="faqs">
         <h4>Got a question?</h4>
 
         <div class="faq-item">
@@ -476,10 +412,10 @@
         </div>
 
      
-        </div>
-      </div>
+      </section>
+     
 
-      <section class="query-section" id="" query-section>
+      <section class="query-section" id="query-section">
         <div class="query-container">
           <div class="query-image">
             <img src="./assets/u1.svg" alt="Question Illustration" />
@@ -530,7 +466,7 @@
         </div>
       </section>
     </div>
-
+ 
     <script>
       const questions = document.querySelectorAll(".faq-question");
 
